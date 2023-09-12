@@ -26,7 +26,7 @@
   </head>
   <body >
     <header class="container mx-auto mt-8">
-      <nav class=" bg-[#F85559] p-4 m-2 lg:m-0 rounded-full text-white">
+      <nav class=" bg-[#F85559] p-2 lg:p-4 m-2 lg:m-0 rounded-full text-white">
         <div class="navbar">
           <div class="navbar-start">
             <div class="dropdown">
@@ -57,7 +57,7 @@
               </ul>
             </div>
 
-            <a class="btn btn-ghost normal-case text-3xl"
+            <a class="btn btn-ghost normal-case text-xl lg:text-3xl"
               ><img class="w-8" src="/images/logo.png" alt="" />Fruit Burst</a
             >
           </div>
@@ -75,7 +75,7 @@
                 <input
                   type="text"
                   placeholder="Search"
-                  class="input rounded-full input-bordered w-24 md:w-auto"
+                  class="input h-10 rounded-full input-bordered w-36 lg:w-48 md:w-auto"
                 />
               </div>
               <div class="lg:-ml-8 -ml-6">
@@ -621,6 +621,30 @@
 
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer footer-center p-10 bg-black text-white">
+      <aside class="flex items-center gap-3">
+        <img src="/images/logo.png" alt="">
+        <h1 class="text-3xl font-bold">Fruit Burst</h1>
+      </aside> 
+      <div>
+        <ul class="flex flex-col lg:flex-row items-center justify-center gap-5 font-semibold">
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="">All Fruits</a></li>
+          <li><a href="">Support</a></li>
+          <li><a href="">My Account</a></li>
+        </ul>
+      </div>
+      <nav>
+        <div class="grid grid-flow-col gap-5">
+          <a href=""><i class="fa-brands fa-instagram text-3xl"></i></a>
+          <a href=""><i class="fa-brands fa-square-twiter text-3xl"></i></a>
+          <a href=""><i class="fa-brands fa-youtube text-3xl"></i></a>&nbsp;
+          <a href=""><i class="fa-brands fa-facebook text-3xl"></i></a>&nbsp;
+          <a href=""><i class="fa-brands fa-linkedin text-3xl"></i></a>&nbsp;
+        </div>
+      </nav>
+    </footer>
   </body>
 </html>
