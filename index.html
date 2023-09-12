@@ -24,9 +24,9 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <header class="container mx-auto">
-      <nav class="mt-8 bg-[#F85559] p-4 m-2 rounded-full text-white">
+  <body >
+    <header class="container mx-auto mt-8">
+      <nav class=" bg-[#F85559] p-4 m-2 lg:m-0 rounded-full text-white">
         <div class="navbar">
           <div class="navbar-start">
             <div class="dropdown">
@@ -155,9 +155,9 @@
       </section>
       <!-- deal the day -->
       <section class="my-40">
-        <div class="flex items-center justify-between">
+        <div class="flex flex-col lg:flex-row space-y-8 lg:space-y-0 m-4 lg:text-start text-center items-center justify-between">
           <div class="flex-1">
-            <h2 class="text-2xl font-semibold">Deal of the day</h2>
+            <h2 class="lg:text-3xl text-2xl font-semibold">Deal of the day</h2>
             <p>
               Contrary to popular belief, is not simply random text. It has
               roots in a piece of classical <br />
@@ -243,8 +243,173 @@
           </div>
         </div>
         <!-- fruits details -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-
+        <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-16 p-4">
+          <!-- card-1 -->
+          <div class="card  bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center space-y-3">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Apples</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <div>
+                <button class=" text-red-500" onclick="my_modal_1.showModal()">Details</button>
+                <dialog id="my_modal_1" class="modal">
+                  <div class="modal-box">
+                    <div class="flex justify-center"><img src="/images/fruit6.png" alt=""></div>
+                    <h3 class="font-bold text-2xl mt-2">Apple</h3>
+                    <p class="py-4">Apples are rich in quercetin and pectin, both of which are credited for supplying apples with their health benefits.</p>
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="mt-2">
+                      <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn btn-outline">Close</button>
+                        <button class="btn bg-[#F85559] text-white">Buy Now</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+              </div>
+            </div>
+          </div>
+          <div class="card  bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center space-y-3">
+              <h2 class="card-title">15.90$ - 17.85$</h2>
+              <p>Orange</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <div>
+                <button class=" text-red-500" onclick="my_modal_2.showModal()">Details</button>
+                <dialog id="my_modal_2" class="modal">
+                  <div class="modal-box">
+                    <div class="flex justify-center"><img src="/images/fruit7.png" alt=""></div>
+                    <h3 class="font-bold text-2xl mt-2">Orange</h3>
+                    <p class="py-4">Many types of oranges are high in fiber and beneficial vitamins, like vitamin C. </p>
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="mt-2">
+                      <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn btn-outline">Close</button>
+                        <button class="btn bg-[#F85559] text-white">Buy Now</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+              </div>
+            </div>
+          </div>
+          <div class="card  bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center space-y-3">
+              <h2 class="card-title">19.90$ - 125.85$</h2>
+              <p>Red Dragon</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"  />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <div>
+                <button class=" text-red-500" onclick="my_modal_3.showModal()">Details</button>
+                <dialog id="my_modal_3" class="modal">
+                  <div class="modal-box">
+                    <div class="flex justify-center"><img src="/images/fruit8.png" alt=""></div>
+                    <h3 class="font-bold text-2xl mt-2">Red Dragon</h3>
+                    <p class="py-4">Dragon fruit is cactus based fruit that has loads of health benefits such as lowering risks of a blood sugar spike, aids in digestion etc.</p>
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="mt-2">
+                      <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn btn-outline">Close</button>
+                        <button class="btn bg-[#F85559] text-white">Buy Now</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+              </div>
+            </div>
+          </div>
+          <div class="card  bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center space-y-3">
+              <h2 class="card-title">12.90$ - 18.85$</h2>
+              <p>Banana</p>
+              <div class="rating">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+              </div>
+              <div>
+                <button class=" text-red-500" onclick="my_modal_4.showModal()">Details</button>
+                <dialog id="my_modal_4" class="modal">
+                  <div class="modal-box">
+                    <div class="flex justify-center"><img src="/images/fruit9.png" alt=""></div>
+                    <h3 class="font-bold text-2xl mt-2">Banana</h3>
+                    <p class="py-4">Bananas are a healthy source of fiber, potassium, vitamin B6, vitamin C, and various antioxidants and phytonutrients.</p>
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="mt-2">
+                      <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn btn-outline">Close</button>
+                        <button class="btn bg-[#F85559] text-white">Buy Now</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+              </div>
+            </div>
+          </div>
+            
+          </div>
+        </div>
+        <div class="text-center mt-3 ">
+          <button class="btn bg-[#F85559] text-white">Shop All</button>
         </div>
       </section>
     </main>
